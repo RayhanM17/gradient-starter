@@ -1,0 +1,35 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*  make width and height include the padding and border */
+}
+  
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif; /* Set a default font */
+    line-height: 1.6; /* Improve readability */
+    background-color: #f9f9f9; /* Light background for contrast */
+    overflow-x: hidden; /* prevents horizontal scroll */
+}
+
+.container {
+    max-width: 1200px; /* Avoid it being to wide on big screens */
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+    display: flex; /* Enables Flexbox layout */
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* cross-axis alignment (vertical by default in row-based flex layouts) */
+    justify-content: center; /* Main axis alignment*/
+}
+
+h5 {
+    margin-bottom: 1rem;
+}
+
+.box {
+    height: 20rem;
+    width: 20rem;
+    background-color: #000;
+}
