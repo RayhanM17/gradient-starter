@@ -36,3 +36,133 @@ h5 {
     width: 20rem;
     background-color: #000;
 }
+
+.simple-linear{
+    background: linear-gradient(blue, pink);
+}
+
+.horizontal-linear{
+    background: linear-gradient(to left, blue, pink);
+}
+
+.diagonal-linear{
+    background: linear-gradient(to bottom right, blue, pink);
+}
+
+.angled-linear {
+    background: linear-gradient(120deg, blue, pink );
+}
+
+.auto-spaced-linear {
+    background: linear-gradient(pink 30%, blue 30px, purple 20px, red 5px, green 2px);
+}
+
+.striped-linear {
+    background: linear-gradient(pink 50%, blue 50%);
+}
+
+.multiposition-stops-1 {
+    background: linear-gradient(
+        to left,
+        pink 20%,
+        rgb(79, 79, 234) 25% 45%,
+        green 50% 75%,
+        pink 80%
+    );
+}
+
+.multiposition-stops-2 {
+    background: linear-gradient(
+        to right,
+        pink 25%,
+        blue 25% 50%,
+        green 50% 80%,
+        pink 80%
+    );
+}
+
+.progression-linear {
+    background: linear-gradient(to top, pink, 5%, blue);
+}
+
+.layered-image {
+    background: linear-gradient(to bottom, transparent, lightblue), url("faculty.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.stacked-gradients {
+    background: 
+        linear-gradient(
+            213deg,
+            rgb(255 0  0 / 80%),
+            rgb(255 0 0 / 0%)
+        ),
+        linear-gradient(
+            113deg,
+            rgb(0 255  0 / 80%),
+            rgb(0 255 0 / 0%)
+        ),
+        linear-gradient(
+            336deg,
+            rgb(0 0 255 / 80%),
+            rgb(0 0 255 / 0%)
+        )
+    ;
+}
+
+.blends-linear {
+    background: 
+        linear-gradient(to top, pink, blue),
+        linear-gradient(to right, red, green)
+    ;
+    background-blend-mode: darken;
+}
+
+.repeating-linear {
+    background: 
+        repeating-linear-gradient(
+            to bottom,
+            red 0%,
+            red 7.69%,
+            white 7.69%,
+            white 15.38%
+        )
+    ;
+}
+
+.plaid-linear {
+    background-color: #000;
+    background: 
+        repeating-linear-gradient(
+            0,
+            rgb(0 0 0 / 50%) 0 12.5%,
+            rgb(265 77 63 / 65%) 12.5% 25%
+        ),
+        repeating-linear-gradient(
+            90deg,
+            rgb(0 0 0 / 50%) 0 12.5%,
+            rgb(265 77 63 / 65%) 12.5% 25%
+        )
+    ;
+}
+
+
+.animated-linear {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 10rem;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
